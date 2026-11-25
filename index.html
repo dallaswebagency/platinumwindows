@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Platinum Window Cleaning | Window Cleaning Edmonton</title>
+<meta name="description" content="Platinum Window Cleaning is a family-owned window cleaning company in Edmonton, AB, offering residential window cleaning, pressure washing, soft washing, and commercial glass cleaning across Edmonton and surrounding areas. Call 780-267-5504.">
+<link rel="icon" href="images/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#16181c;--ink2:#22262c;--steel:#5b626c;--silver:#a8aeb6;--plat:#d9dce0;--mist:#eef0f2;--paper:#f8f9fa;--white:#fff;--sky:#9ec3dd;
+  --metal:linear-gradient(120deg,#fbfbfc 0%,#c6cad0 28%,#f2f3f5 46%,#9da3ab 72%,#e7e9ec 100%);
+  --head:"Archivo","Arial Narrow",Arial,sans-serif;--body:"Figtree","Segoe UI",Arial,sans-serif;
+  --wrap:1240px;--r:4px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;font-family:var(--body);color:var(--ink);background:var(--paper);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--sky);outline-offset:3px}
+.wrap{width:min(var(--wrap),100% - 48px);margin-inline:auto}
+h1,h2,h3{font-family:var(--head);font-stretch:112%;line-height:1.02;margin:0;letter-spacing:-.01em}
+h2{font-size:clamp(34px,4.6vw,60px);font-weight:800}
+h3{font-size:22px;font-weight:700}
+.kick{display:inline-flex;align-items:center;gap:10px;font-weight:600;font-size:15px;color:var(--steel);margin:0 0 18px}
+.kick::before{content:"";width:28px;height:2px;background:currentColor}
+.lead{font-size:19px;color:var(--steel);max-width:58ch}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:16px 26px;font:700 16px/1 var(--body);text-decoration:none;border-radius:var(--r);border:0;cursor:pointer;transition:transform .2s,box-shadow .2s,background .2s}
+.btn svg{width:18px;height:18px}
+.btn-metal{background:var(--metal);background-size:220% 100%;color:var(--ink);box-shadow:inset 0 0 0 1px rgba(255,255,255,.6),0 10px 24px -12px rgba(0,0,0,.6);animation:sheen 6s ease-in-out infinite}
+.btn-metal:hover{transform:translateY(-2px)}
+.btn-ink{background:var(--ink);color:#fff}
+.btn-ink:hover{background:var(--ink2);transform:translateY(-2px)}
+.btn-ghost{color:#fff;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.55)}
+.btn-ghost:hover{background:rgba(255,255,255,.12)}
+@keyframes sheen{0%,100%{background-position:0% 0}50%{background-position:100% 0}}
+
+/* ---------- top + nav ---------- */
+.top{background:var(--ink);color:var(--plat);font-size:14px}
+.top .wrap{display:flex;justify-content:space-between;gap:20px;padding:9px 0;flex-wrap:wrap}
+.top a{text-decoration:none}
+.top a:hover{color:#fff}
+.top span{display:inline-flex;gap:8px;align-items:center}
+.top svg{width:15px;height:15px;opacity:.8}
+.top .tl{display:flex;gap:26px}
+header.nav{position:sticky;top:0;z-index:50;background:rgba(248,249,250,.86);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid rgba(22,24,28,.08)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:76px;gap:24px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink)}
+.brand svg{width:38px;height:44px}
+.brand b{font-family:var(--head);font-stretch:118%;font-weight:700;font-size:19px;line-height:1;display:block;letter-spacing:.01em}
+.brand small{display:block;font-size:12.5px;color:var(--steel);letter-spacing:.14em;margin-top:4px}
+.menu{display:flex;gap:28px;align-items:center}
+.menu a{text-decoration:none;font-weight:600;font-size:15.5px;position:relative;padding:6px 0}
+.menu a:not(.btn)::after{content:"";position:absolute;left:0;bottom:0;height:2px;width:100%;background:var(--ink);transform:scaleX(0);transform-origin:left;transition:transform .25s}
+.menu a:not(.btn):hover::after{transform:scaleX(1)}
+.menu .btn{padding:13px 20px}
+.burger{display:none;background:none;border:0;width:44px;height:44px;cursor:pointer;color:var(--ink)}
+.burger svg{width:28px;height:28px}
+
+/* ---------- hero ---------- */
+.hero{position:relative;min-height:min(88vh,860px);display:flex;align-items:flex-end;color:#fff;overflow:hidden;background:var(--ink)}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 40%;transform:scale(1.06);animation:settle 2.4s cubic-bezier(.2,.7,.2,1) forwards}
+@keyframes settle{to{transform:scale(1)}}
+.hero::before{content:"";position:absolute;inset:0;z-index:2;background:linear-gradient(90deg,rgba(14,16,20,.88) 0%,rgba(14,16,20,.62) 42%,rgba(14,16,20,.1) 75%),linear-gradient(0deg,rgba(14,16,20,.7),transparent 45%)}
+.frost{position:absolute;inset:0;z-index:1;backdrop-filter:blur(16px) saturate(.5) brightness(1.15);-webkit-backdrop-filter:blur(16px) saturate(.5) brightness(1.15);background:rgba(220,228,236,.28);clip-path:inset(0 0 0 0);animation:clear 2.6s .5s cubic-bezier(.65,0,.3,1) forwards}
+@keyframes clear{to{clip-path:inset(0 0 0 100%)}}
+.blade{position:absolute;z-index:3;top:6%;bottom:6%;left:-2%;width:16px;animation:wipe 2.6s .5s cubic-bezier(.65,0,.3,1) forwards;pointer-events:none}
+.blade::before{content:"";position:absolute;inset:0;border-radius:3px;background:linear-gradient(90deg,#2b2f35,#0d0f12 60%,#3a3f46);box-shadow:0 0 0 2px rgba(255,255,255,.25),10px 0 30px rgba(255,255,255,.35)}
+.blade::after{content:"";position:absolute;top:50%;left:50%;width:8px;height:130px;transform:translate(-50%,-50%);background:var(--metal);border-radius:4px;box-shadow:0 0 0 1px rgba(0,0,0,.3)}
+@keyframes wipe{0%{left:-2%;opacity:1}92%{opacity:1}100%{left:101%;opacity:0}}
+.hero .wrap{position:relative;z-index:4;padding:110px 0 80px}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:40px;align-items:end}
+.hero .kick{color:var(--plat)}
+.hero h1{font-size:clamp(42px,6.4vw,92px);font-weight:850;font-stretch:118%;line-height:.94;max-width:13ch}
+.hero h1 em{display:block;font-style:normal;font-weight:300;font-stretch:100%;font-size:.42em;line-height:1.2;margin-top:18px;color:var(--plat);max-width:22ch}
+.hero p.sub{font-size:19px;color:#d6dade;max-width:46ch;margin:22px 0 30px}
+.hero .ctas{display:flex;gap:14px;flex-wrap:wrap}
+.hero-card{justify-self:end;width:100%;max-width:360px;background:rgba(255,255,255,.1);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.22);border-radius:6px;padding:24px 24px 20px}
+.hero-card ul{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.hero-card li{display:flex;gap:12px;align-items:center;font-weight:600}
+.hero-card li svg{width:20px;height:20px;flex:none;color:var(--plat)}
+.hero-card .call{display:flex;align-items:center;gap:14px;margin-top:20px;padding-top:18px;border-top:1px solid rgba(255,255,255,.2);text-decoration:none}
+.hero-card .call i{width:46px;height:46px;border-radius:50%;background:var(--metal);display:grid;place-items:center;color:var(--ink)}
+.hero-card .call i svg{width:20px;height:20px}
+.hero-card .call small{display:block;color:var(--plat);font-size:13px}
+.hero-card .call b{font-family:var(--head);font-size:21px;font-stretch:110%}
+.hero-strip{position:relative;z-index:4;margin-top:70px;border-top:1px solid rgba(255,255,255,.18)}
+.hero-strip .wrap{display:grid;grid-template-columns:repeat(4,1fr);padding:0}
+.hero-strip a{display:flex;justify-content:space-between;align-items:center;padding:22px 20px;text-decoration:none;font-family:var(--head);font-stretch:110%;font-weight:600;font-size:17px;border-left:1px solid rgba(255,255,255,.18);transition:background .25s}
+.hero-strip a:last-child{border-right:1px solid rgba(255,255,255,.18)}
+.hero-strip a:hover{background:rgba(255,255,255,.1)}
+.hero-strip svg{width:18px;height:18px;opacity:.7}
+
+/* ---------- services: window frame ---------- */
+.sec{padding:120px 0}
+.svc-head{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end;margin-bottom:56px}
+.svc-head p{margin:0}
+.casement{position:relative;background:var(--ink);padding:14px;border-radius:6px;box-shadow:0 40px 80px -40px rgba(22,24,28,.55)}
+.casement::before{content:"";position:absolute;left:50%;top:-26px;transform:translateX(-50%);width:120px;height:12px;border-radius:6px 6px 0 0;background:var(--metal)}
+.panes{display:grid;grid-template-columns:1.2fr 1fr;grid-template-rows:380px 380px;gap:14px}
+.pane{position:relative;overflow:hidden;color:#fff;text-decoration:none;display:flex;align-items:flex-end;background:var(--ink2);isolation:isolate}
+.pane img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transform:scale(var(--z,1));transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
+.pane::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,rgba(14,16,20,.92) 0%,rgba(14,16,20,.35) 55%,rgba(14,16,20,.05))}
+.pane::after{content:"";position:absolute;top:-20%;bottom:-20%;left:-60%;width:40%;transform:skewX(-18deg);background:linear-gradient(90deg,transparent,rgba(255,255,255,.35),transparent);transition:left .9s ease}
+.pane:hover::after{left:130%}
+.pane:hover img{transform:scale(calc(var(--z,1) * 1.06))}
+.pane .tx{padding:30px 30px 28px;max-width:46ch}
+.pane h3{font-size:clamp(24px,2.4vw,32px);font-weight:800;margin-bottom:10px}
+.pane p{margin:0 0 16px;color:#dfe2e6;font-size:16px}
+.pane .more{display:inline-flex;gap:8px;align-items:center;font-weight:700;font-size:15px;border-bottom:1.5px solid rgba(255,255,255,.5);padding-bottom:3px}
+.pane .more svg{width:16px;height:16px;transition:transform .25s}
+.pane:hover .more svg{transform:translateX(4px)}
+.pane.tall{grid-row:span 2}
+.pane .tag{position:absolute;top:22px;left:22px;font-size:13px;font-weight:700;background:rgba(255,255,255,.14);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.25);padding:7px 12px;border-radius:30px}
+.pane .tag svg{width:14px;height:14px;vertical-align:-2px;margin-right:6px}
+
+/* guides */
+.guides{margin-top:90px;display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:start}
+.guides h3{font-size:clamp(26px,2.8vw,36px);font-weight:800;margin-bottom:14px}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.tab{font:600 15px var(--body);padding:11px 18px;border-radius:40px;border:1.5px solid rgba(22,24,28,.18);background:transparent;cursor:pointer;color:var(--ink);transition:background .2s,color .2s,border-color .2s}
+.tab[aria-selected="true"]{background:var(--ink);color:#fff;border-color:var(--ink)}
+.panel{background:#fff;border:1px solid rgba(22,24,28,.1);border-radius:6px;padding:26px}
+.panel[hidden]{display:none}
+.panel h4{margin:0 0 16px;font:700 17px var(--body)}
+.cities{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:8px}
+.cities a{display:flex;justify-content:space-between;align-items:center;padding:13px 14px;background:var(--mist);border-radius:4px;text-decoration:none;font-weight:600;font-size:15px;transition:background .2s,color .2s}
+.cities a:hover{background:var(--ink);color:#fff}
+.cities svg{width:15px;height:15px;opacity:.6}
+
+/* ---------- approach ---------- */
+.approach{background:var(--ink);color:#fff;position:relative;overflow:hidden}
+.approach::before{content:"";position:absolute;right:-10%;top:-30%;width:60%;height:160%;background:repeating-linear-gradient(115deg,transparent 0 60px,rgba(255,255,255,.025) 60px 62px)}
+.ap-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center;position:relative}
+.approach .kick{color:var(--silver)}
+.approach h2{max-width:12ch}
+.points{list-style:none;padding:0;margin:44px 0 0;display:grid;gap:0}
+.points li{display:grid;grid-template-columns:54px 1fr;gap:18px;align-items:center;padding:20px 0;border-top:1px solid rgba(255,255,255,.12);font-size:17.5px;color:#e3e6ea}
+.points li:last-child{border-bottom:1px solid rgba(255,255,255,.12)}
+.points i{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.16);color:var(--plat)}
+.points svg{width:24px;height:24px}
+.ap-img{position:relative}
+.ap-img img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:4px}
+.ap-img .glare{position:absolute;inset:0;border-radius:4px;overflow:hidden;pointer-events:none}
+.ap-img .glare::before{content:"";position:absolute;top:-10%;bottom:-10%;width:30%;left:-40%;transform:skewX(-18deg);background:linear-gradient(90deg,transparent,rgba(255,255,255,.28),transparent);animation:glint 7s 1s ease-in-out infinite}
+@keyframes glint{0%{left:-40%}35%,100%{left:140%}}
+.ap-img .seal{position:absolute;left:-34px;bottom:40px;width:130px;height:130px;color:var(--ink)}
+.seal .ring{animation:spin 24s linear infinite;transform-origin:65px 65px}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* ---------- about ---------- */
+.about-grid{display:grid;grid-template-columns:1fr 1.05fr;gap:80px;align-items:center}
+.collage{position:relative;padding:0 60px 80px 0}
+.frame{position:relative;padding:14px}
+.frame::before{content:"";position:absolute;inset:0;border:2.5px solid var(--ink);clip-path:polygon(0 0,58% 0,58% 2.5px,64% 0,100% 0,100% 100%,0 100%)}
+.frame img{width:100%;aspect-ratio:3/4;object-fit:cover}
+.collage .pole{position:absolute;right:0;bottom:0;width:52%;border:8px solid var(--paper);box-shadow:0 30px 50px -25px rgba(22,24,28,.5)}
+.collage .pole img{aspect-ratio:1/1;object-fit:cover;width:100%}
+.fam{display:flex;width:fit-content;align-items:center;gap:10px;background:var(--ink);color:#fff;font-weight:700;font-size:14.5px;padding:10px 16px 10px 12px;border-radius:40px;margin-bottom:22px}
+.fam svg{width:20px;height:20px;color:var(--plat)}
+.about h2{margin-bottom:24px}
+.about p{color:var(--steel);font-size:18px;max-width:56ch}
+.pull{margin:30px 0 34px;padding-left:22px;border-left:3px solid var(--ink);font-family:var(--head);font-stretch:105%;font-size:22px;line-height:1.35;color:var(--ink);font-weight:500}
+
+/* ---------- reviews ---------- */
+.reviews{background:var(--mist);overflow:hidden}
+.rv-head{display:flex;justify-content:space-between;align-items:end;gap:30px;flex-wrap:wrap;margin-bottom:50px}
+.gbadge{display:flex;align-items:center;gap:14px;background:#fff;padding:14px 20px;border-radius:6px;border:1px solid rgba(22,24,28,.08)}
+.gbadge svg.g{width:30px;height:30px}
+.gbadge b{display:block;font-size:15px}
+.stars{display:inline-flex;gap:2px;color:var(--ink)}
+.stars svg{width:17px;height:17px}
+.track{display:flex;gap:22px;width:max-content;animation:slide 60s linear infinite}
+.marquee:hover .track{animation-play-state:paused}
+@keyframes slide{to{transform:translateX(calc(-50% - 11px))}}
+.rcard{width:380px;flex:none;background:#fff;border-radius:6px;padding:30px 28px 26px;display:flex;flex-direction:column;gap:18px;border:1px solid rgba(22,24,28,.06);position:relative}
+.rcard::before{content:"\201C";position:absolute;right:22px;top:2px;font:800 90px/1 var(--head);color:var(--mist)}
+.rcard p{margin:0;font-size:16.5px;color:#2e3238;flex:1;position:relative}
+.rcard footer{display:flex;align-items:center;gap:12px;padding-top:16px;border-top:1px solid var(--mist)}
+.av{width:42px;height:42px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;font-weight:700;font-family:var(--head)}
+.rcard footer b{display:block;font-size:15.5px}
+.rcard footer small{color:var(--steel);font-size:13.5px}
+
+/* ---------- area ---------- */
+.area-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:70px;align-items:center}
+.map{width:100%;height:auto;background:var(--ink);border-radius:6px}
+.map text{font-family:var(--body);font-weight:600;fill:#e6e9ec;font-size:15px}
+.map .hub text{font-family:var(--head);font-weight:800;font-size:19px;fill:#fff}
+.map .pulse{transform-origin:330px 230px;animation:pulse 2.8s ease-out infinite}
+@keyframes pulse{0%{transform:scale(.4);opacity:.8}100%{transform:scale(2.4);opacity:0}}
+.map .route{stroke-dasharray:4 7;animation:dash 18s linear infinite}
+@keyframes dash{to{stroke-dashoffset:-200}}
+.area-list{list-style:none;padding:0;margin:30px 0 0;columns:2;column-gap:12px}
+.area-list li{break-inside:avoid;margin-bottom:10px}
+.area-list a{display:flex;gap:10px;align-items:center;text-decoration:none;font-weight:600;padding:12px 14px;border:1px solid rgba(22,24,28,.14);border-radius:4px;transition:background .2s,color .2s}
+.area-list a:hover{background:var(--ink);color:#fff}
+.area-list svg{width:16px;height:16px;flex:none}
+
+/* ---------- contact ---------- */
+.contact{padding:0 0 120px}
+.cbox{display:grid;grid-template-columns:.85fr 1.15fr;border-radius:8px;overflow:hidden;box-shadow:0 40px 80px -45px rgba(22,24,28,.5)}
+.cinfo{background:var(--ink);color:#fff;padding:56px 48px;position:relative;overflow:hidden}
+.cinfo::after{content:"";position:absolute;right:-80px;bottom:-80px;width:280px;height:280px;border:2px solid rgba(255,255,255,.08);transform:rotate(12deg)}
+.cinfo .kick{color:var(--silver)}
+.cinfo p{color:#cfd3d8}
+.cinfo h4{margin:34px 0 12px;font:600 14px var(--body);color:var(--silver)}
+.cinfo .row{display:flex;gap:10px;flex-wrap:wrap}
+.cinfo .btn{padding:14px 20px}
+.cinfo .mail{display:inline-flex;gap:10px;align-items:center;font-size:17px;font-weight:600;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.3);padding-bottom:3px}
+.cinfo .mail svg{width:18px;height:18px}
+form.quote{background:#fff;padding:56px 48px;display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.field{display:flex;flex-direction:column;gap:7px}
+.field.full{grid-column:1/-1}
+label{font-weight:600;font-size:14.5px}
+input,select,textarea{font:16px var(--body);padding:14px 15px;border:1.5px solid rgba(22,24,28,.16);border-radius:4px;background:var(--paper);color:var(--ink);transition:border-color .2s,background .2s}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--ink);background:#fff}
+textarea{min-height:130px;resize:vertical}
+form.quote .btn{justify-self:start}
+.sent{grid-column:1/-1;margin:0;font-weight:600;color:var(--steel)}
+
+/* ---------- footer ---------- */
+footer.site{background:var(--ink);color:#c9cdd2;padding:80px 0 30px;position:relative;overflow:hidden}
+.fbig{font-family:var(--head);font-stretch:125%;font-weight:900;font-size:clamp(46px,10.5vw,160px);line-height:.85;letter-spacing:-.02em;background:var(--metal);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:sheen 9s ease-in-out infinite;margin:0 0 60px;white-space:nowrap}
+.fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.1fr;gap:40px;padding-bottom:50px;border-bottom:1px solid rgba(255,255,255,.1)}
+.fgrid h5{margin:0 0 16px;font:700 15px var(--body);color:#fff}
+.fgrid ul{list-style:none;margin:0;padding:0;display:grid;gap:9px}
+.fgrid a{text-decoration:none;font-size:15.5px}
+.fgrid a:hover{color:#fff}
+.fbrand{display:flex;gap:14px;align-items:center;color:#fff;margin-bottom:16px}
+.fbrand svg{width:44px;height:52px}
+.fbrand b{font-family:var(--head);font-stretch:118%;font-size:20px;display:block;line-height:1.1}
+.fbot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;padding-top:26px;font-size:14.5px}
+.fbot a{color:#fff;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.35)}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .9s ease,transform .9s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+
+/* responsive */
+@media (max-width:1040px){
+  .menu{position:fixed;inset:76px 0 auto 0;background:var(--paper);flex-direction:column;align-items:stretch;padding:18px 24px 26px;gap:4px;border-bottom:1px solid rgba(22,24,28,.1);transform:translateY(-12px);opacity:0;visibility:hidden;transition:transform .3s,opacity .3s,visibility .3s;z-index:-1}
+  .menu.open{transform:none;opacity:1;visibility:visible}
+  .menu a{padding:12px 0}
+  .burger{display:grid;place-items:center}
+  .hero-grid,.svc-head,.guides,.ap-grid,.about-grid,.area-grid,.cbox{grid-template-columns:1fr}
+  .hero-card{justify-self:start}
+  .hero-strip .wrap{grid-template-columns:1fr 1fr}
+  .fgrid{grid-template-columns:1fr 1fr}
+  .ap-img .seal{left:12px}
+}
+@media (max-width:700px){
+  body{font-size:16px}
+  .sec{padding:84px 0}
+  .top .tl span:nth-child(2){display:none}
+  .panes{grid-template-columns:1fr;grid-template-rows:none}
+  .pane{min-height:340px}
+  .pane.tall{grid-row:auto;min-height:420px}
+  .hero-strip a{font-size:15px;padding:18px 14px}
+  form.quote{grid-template-columns:1fr;padding:36px 24px}
+  .cinfo{padding:40px 24px}
+  .rcard{width:300px}
+  .area-list{columns:1}
+  .fgrid{grid-template-columns:1fr}
+  .collage{padding:0 30px 60px 0}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .frost,.blade{display:none}
+  .rv{opacity:1;transform:none}
+  .track{flex-wrap:wrap;width:auto}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="logo" viewBox="0 0 120 140"><g fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="square"><path d="M8 14 H70 L76 8 H112 V132 H8 Z"/><path d="M30 104 V30 H44 C60 30 64 40 64 50 C64 62 56 70 44 70 H30"/><path d="M40 84 L50 116 L62 80 L74 116 L90 30"/></g></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.1.37 2.3.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.3.2 2.5.57 3.6a1 1 0 0 1-.25 1z"/></symbol>
+  <symbol id="i-msg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M4 5h16v11H9l-5 4z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="m3 6 9 7 9-7"/></g></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></g></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-ne" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M7 17 17 7M9 7h8v8"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m8 12.5 2.6 2.5L16 9.5"/></g></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M12 3 4.5 6v5.5c0 4.6 3.2 8.4 7.5 9.5 4.3-1.1 7.5-4.9 7.5-9.5V6z"/><path d="m8.8 12 2.3 2.3 4.2-4.6" stroke-linecap="round"/></g></symbol>
+  <symbol id="i-doc" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 3h9l4 4v14H6z" stroke-linejoin="round"/><path d="M9 11h7M9 14.5h7M9 18h4"/></g></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3.5" y="5" width="17" height="15" rx="1.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/><path d="m9 15 2 2 4-4"/></g></symbol>
+  <symbol id="i-map" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M3 6.5 9 4l6 2.5L21 4v13.5L15 20l-6-2.5L3 20z"/><path d="M9 4v13.5M15 6.5V20"/></g></symbol>
+  <symbol id="i-home" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M3.5 11 12 4l8.5 7"/><path d="M6 9.5V20h12V9.5"/><path d="M10 20v-5h4v5"/></g></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" d="m12 2.8 2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4-4.7-4.4 6.4-.8z"/></symbol>
+</svg>
+
+<div class="top">
+  <div class="wrap">
+    <div class="tl">
+      <span><svg><use href="#i-pin"/></svg>Edmonton, Alberta</span>
+      <span><svg><use href="#i-mail"/></svg><a href="mailto:platinumwindows.ca@gmail.com">platinumwindows.ca@gmail.com</a></span>
+    </div>
+    <span><svg><use href="#i-phone"/></svg><a href="tel:+17802675504">Call or text (780) 267-5504</a></span>
+  </div>
+</div>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Platinum Window Cleaning home">
+      <svg><use href="#logo"/></svg>
+      <span><b>Platinum</b><small>Window Cleaning</small></span>
+    </a>
+    <nav class="menu" id="menu" aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#approach">Approach</a>
+      <a href="#about">About Us</a>
+      <a href="#testimonials">Reviews</a>
+      <a href="#area">Service Area</a>
+      <a class="btn btn-ink" href="#contact">Get a Quote</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h10"/></svg></button>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" aria-labelledby="h1">
+  <img src="images/edmonton-window-cleaning-family-owned-business-clean.webp" alt="Clean windows on a large Edmonton home with the Platinum Window Cleaning truck in the driveway" width="2000" height="1500" fetchpriority="high">
+  <div class="frost" aria-hidden="true"></div>
+  <div class="blade" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <p class="kick">Clarity is the standard.</p>
+        <h1 id="h1">Professional Window Cleaning <em>in Edmonton &amp; Surrounding Communities</em></h1>
+        <p class="sub">Interior &amp; exterior window cleaning, pressure washing and soft washing for homes and businesses.</p>
+        <div class="ctas">
+          <a class="btn btn-metal" href="#contact">Request a Quote <svg><use href="#i-arrow"/></svg></a>
+          <a class="btn btn-ghost" href="#services">View Services</a>
+        </div>
+      </div>
+      <aside class="hero-card" aria-label="Highlights">
+        <ul>
+          <li><svg><use href="#i-check"/></svg>Family owned &amp; operated</li>
+          <li><svg><use href="#i-check"/></svg>Fully insured</li>
+          <li><svg><use href="#i-check"/></svg>Itemized quotes before work begins</li>
+          <li><svg><use href="#i-check"/></svg>Homes &amp; businesses</li>
+        </ul>
+        <a class="call" href="tel:+17802675504"><i><svg><use href="#i-phone"/></svg></i><span><small>Call or text</small><b>(780) 267-5504</b></span></a>
+      </aside>
+    </div>
+  </div>
+</section>
+<nav class="hero-strip" aria-label="Services" style="margin:0;background:var(--ink);color:#fff">
+  <div class="wrap">
+    <a href="https://platinumwindows.ca/window-cleaning-edmonton/">Window Cleaning <svg><use href="#i-ne"/></svg></a>
+    <a href="https://platinumwindows.ca/pressure-washing-edmonton/">Pressure Washing <svg><use href="#i-ne"/></svg></a>
+    <a href="https://platinumwindows.ca/house-washing-edmonton/">Soft Washing <svg><use href="#i-ne"/></svg></a>
+    <a href="https://platinumwindows.ca/commercial-window-cleaning-edmonton/">Commercial Glass <svg><use href="#i-ne"/></svg></a>
+  </div>
+</nav>
+
+<section class="sec" id="services">
+  <div class="wrap">
+    <div class="svc-head">
+      <div><p class="kick">What we do</p><h2>Four services. One standard of finish.</h2></div>
+      <p class="lead">Every job is measured against the same result: streak-free glass, a spotless exterior, and a property that looks cared for.</p>
+    </div>
+    <div class="casement rv">
+      <div class="panes">
+        <a class="pane tall" href="https://platinumwindows.ca/window-cleaning-edmonton/">
+          <img src="images/streak-free-interior-window-cleaning-edmonton.webp" alt="Streak-free interior window cleaning result in an Edmonton home" width="1600" height="1200" style="object-position:50% 30%">
+          <span class="tag"><svg><use href="#i-home"/></svg>Residential &amp; multi-storey</span>
+          <div class="tx"><h3>Window Cleaning</h3><p>Interior and exterior glass, frames, and sills, residential and multi-storey, hand-finished for a streak-free result.</p><span class="more">Learn more <svg><use href="#i-arrow"/></svg></span></div>
+        </a>
+        <a class="pane" href="https://platinumwindows.ca/pressure-washing-edmonton/">
+          <img src="images/edmonton-window-cleaning-family-owned-business-clean.webp" alt="Clean driveway and front of an Edmonton home" width="2000" height="1500" style="--z:1.9;transform-origin:22% 96%">
+          <div class="tx"><h3>Pressure Washing</h3><p>Driveways, walkways, decks, and siding, lifted back to their original tone without damaging the surface underneath.</p><span class="more">Learn more <svg><use href="#i-arrow"/></svg></span></div>
+        </a>
+        <a class="pane" href="https://platinumwindows.ca/house-washing-edmonton/">
+          <img src="images/edmonton-window-cleaning-family-owned-business-clean.webp" alt="House exterior after soft washing in Edmonton" width="2000" height="1500" style="--z:1.55;transform-origin:78% 8%">
+          <div class="tx"><h3>Soft Washing</h3><p>Low-pressure, detergent-based cleaning for house exteriors and delicate surfaces where power alone would do harm.</p><span class="more">Learn more <svg><use href="#i-arrow"/></svg></span></div>
+        </a>
+      </div>
+      <div class="panes" style="grid-template-columns:1fr;grid-template-rows:auto;margin-top:14px">
+        <a class="pane" href="https://platinumwindows.ca/commercial-window-cleaning-edmonton/" style="min-height:340px">
+          <img src="images/exterior-window-cleaning-water-fed-pole-edmonton.webp" alt="Exterior window cleaning with a water-fed pole on a commercial property in Edmonton" width="1000" height="869" style="object-position:50% 40%">
+          <span class="tag"><svg><use href="#i-cal"/></svg>Scheduled programs</span>
+          <div class="tx"><h3>Commercial Glass</h3><p>Scheduled interior and exterior glass programs for storefronts, offices, and commercial properties across the city.</p><span class="more">Learn more <svg><use href="#i-arrow"/></svg></span></div>
+        </a>
+      </div>
+    </div>
+
+    <div class="guides">
+      <div class="rv">
+        <p class="kick">Local service guides</p>
+        <h3>Detailed help for your service and community.</h3>
+        <p class="lead" style="font-size:17.5px">Explore what is included, how each service works, local scheduling considerations, and answers to common questions before requesting a quote.</p>
+      </div>
+      <div class="rv">
+        <div class="tabs" role="tablist" aria-label="Service guides">
+          <button class="tab" role="tab" aria-selected="true" aria-controls="g1" id="t1">Window Cleaning</button>
+          <button class="tab" role="tab" aria-selected="false" aria-controls="g2" id="t2" tabindex="-1">Pressure Washing</button>
+          <button class="tab" role="tab" aria-selected="false" aria-controls="g3" id="t3" tabindex="-1">House Washing</button>
+          <button class="tab" role="tab" aria-selected="false" aria-controls="g4" id="t4" tabindex="-1">Commercial Glass</button>
+        </div>
+        <div class="panel" role="tabpanel" id="g1" aria-labelledby="t1">
+          <h4>Window Cleaning guides</h4>
+          <div class="cities">
+            <a href="https://platinumwindows.ca/window-cleaning-edmonton/">Edmonton <svg><use href="#i-ne"/></svg></a>
+            <a href="https://platinumwindows.ca/window-cleaning-st-albert/">St. Albert <svg><use href="#i-ne"/></svg></a>
+            <a href="https://platinumwindows.ca/window-cleaning-sherwood-park/">Sherwood Park <svg><use href="#i-ne"/></svg></a>
+            <a href="https://platinumwindows.ca/window-cleaning-spruce-grove/">Spruce Grove <svg><use href="#i-ne"/></svg></a>
+            <a href="https://platinumwindows.ca/window-cleaning-leduc/">Leduc <svg><use href="#i-ne"/></svg></a>
+            <a href="https://platinumwindows.ca/window-cleaning-fort-saskatchewan/">Fort Saskatchewan <svg><use href="#i-ne"/></svg></a>
+            <a href="https://platinumwindows.ca/window-cleaning-drayton-valley/">Drayton Valley <svg><use href="#i-ne"/></svg></a>
+          </div>
+        </div>
+        <div class="panel" role="tabpanel" id="g2" aria-labelledby="t2" hidden>
+          <h4>Pressure Washing guides</h4>
+          <div class="cities">
+            <a href="https://platinumwindows.ca/pressure-washing-edmonton/">Edmonton <svg><use href="#i-ne"/></svg></a>
+            <a href="https://platinumwindows.ca/pressure-washing-st-albert/">St. Albert <svg><use href="#i-ne"/></svg></a>
+            <a href="https://platinumwindows.ca/pressure-washing-sherwood-park/">Sherwood Park <svg><use href="#i-ne"/></svg></a>
+          </div>
+        </div>
+        <div class="panel" role="tabpanel" id="g3" aria-labelledby="t3" hidden>
+          <h4>House Washing guides</h4>
+          <div class="cities">
+            <a href="https://platinumwindows.ca/house-washing-edmonton/">Edmonton <svg><use href="#i-ne"/></svg></a>
+            <a href="https://platinumwindows.ca/house-washing-st-albert/">St. Albert <svg><use href="#i-ne"/></svg></a>
+            <a href="https://platinumwindows.ca/house-washing-sherwood-park/">Sherwood Park <svg><use href="#i-ne"/></svg></a>
+          </div>
+        </div>
+        <div class="panel" role="tabpanel" id="g4" aria-labelledby="t4" hidden>
+          <h4>Commercial Glass guides</h4>
+          <div class="cities">
+            <a href="https://platinumwindows.ca/commercial-window-cleaning-edmonton/">Edmonton <svg><use href="#i-ne"/></svg></a>
+            <a href="https://platinumwindows.ca/commercial-window-cleaning-st-albert/">St. Albert <svg><use href="#i-ne"/></svg></a>
+            <a href="https://platinumwindows.ca/commercial-window-cleaning-sherwood-park/">Sherwood Park <svg><use href="#i-ne"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec approach" id="approach">
+  <div class="wrap ap-grid">
+    <div class="rv">
+      <p class="kick">The Platinum approach</p>
+      <h2>Detail work, treated like detail work.</h2>
+      <ul class="points">
+        <li><i><svg><use href="#i-shield"/></svg></i>Fully insured, careful on every surface: glass, stone, siding, and stucco.</li>
+        <li><i><svg><use href="#i-doc"/></svg></i>Straightforward, itemized quotes before any work begins.</li>
+        <li><i><svg><use href="#i-cal"/></svg></i>Residential one-time cleans and recurring commercial contracts.</li>
+        <li><i><svg><use href="#i-map"/></svg></i>Local to Edmonton, familiar with the city’s seasons and its buildings.</li>
+      </ul>
+    </div>
+    <div class="ap-img rv">
+      <img src="images/streak-free-interior-window-cleaning-edmonton.webp" alt="Streak-free interior window cleaning result in an Edmonton home by Platinum Window Cleaning" width="1600" height="1200" style="object-position:62% 50%">
+      <span class="glare" aria-hidden="true"></span>
+      <svg class="seal" viewBox="0 0 130 130" aria-hidden="true">
+        <circle cx="65" cy="65" r="64" fill="#fff"/>
+        <defs><path id="circ" d="M65 65 m-47 0 a47 47 0 1 1 94 0 a47 47 0 1 1 -94 0"/></defs>
+        <g class="ring"><text font-family="Figtree,Arial" font-size="11.5" font-weight="700" letter-spacing="1" fill="#16181c"><textPath href="#circ" textLength="290" lengthAdjust="spacing">CLARITY IS THE STANDARD • PLATINUM •</textPath></text></g>
+        <svg x="45" y="41" width="40" height="48" color="#16181c"><use href="#logo"/></svg>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section class="sec about" id="about">
+  <div class="wrap about-grid">
+    <div class="collage rv">
+      <div class="frame"><img src="images/platinum-windows-owners-family-owned-edmonton.webp" alt="Husband and wife owners of Platinum Window Cleaning wearing company shirts outdoors" width="1086" height="1448"></div>
+      <div class="pole"><img src="images/exterior-window-cleaning-water-fed-pole-edmonton.webp" alt="Exterior window cleaning with a water-fed pole on a commercial property in Edmonton" width="1000" height="869"></div>
+    </div>
+    <div class="rv">
+      <span class="fam"><svg><use href="#i-home"/></svg>Family Owned &amp; Operated</span>
+      <p class="kick">Who’s coming to your property</p>
+      <h2>A local, family-run business, not a call centre.</h2>
+      <p>When you book with Platinum Window Cleaning, you know exactly who’s showing up: a local owner-operator, not a rotating crew from a national chain.</p>
+      <p class="pull">That’s the whole point of a family business: accountability, consistency, and someone who actually cares whether your glass looks right.</p>
+      <a class="btn btn-ink" href="#contact">Request a Quote <svg><use href="#i-arrow"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<section class="sec reviews" id="testimonials">
+  <div class="wrap rv-head">
+    <div><p class="kick">Real reviews</p><h2>What Edmonton homeowners say.</h2></div>
+    <div class="gbadge">
+      <svg class="g" viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M45 24.5c0-1.6-.1-3.1-.4-4.5H24v8.5h11.8a10 10 0 0 1-4.4 6.6v5.5h7.1c4.2-3.9 6.5-9.6 6.5-16.1z"/><path fill="#34A853" d="M24 46c5.9 0 10.9-2 14.5-5.4l-7.1-5.5c-2 1.3-4.5 2.1-7.4 2.1-5.7 0-10.5-3.8-12.2-9H4.5v5.7A22 22 0 0 0 24 46z"/><path fill="#FBBC05" d="M11.8 28.2a13 13 0 0 1 0-8.4v-5.7H4.5a22 22 0 0 0 0 19.8z"/><path fill="#EA4335" d="M24 10.8c3.2 0 6.1 1.1 8.4 3.3l6.3-6.3A22 22 0 0 0 4.5 14.1l7.3 5.7c1.7-5.2 6.5-9 12.2-9z"/></svg>
+      <div><b>Google Reviews</b><span class="stars" aria-label="5 stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span></div>
+    </div>
+  </div>
+  <div class="marquee">
+    <div class="track" id="track">
+      <article class="rcard"><span class="stars" aria-label="5 stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><p>Mike did an outstanding job! So pleased with the 40+ windows he meticulously cleaned at our home. Would highly recommend Platinum Window Cleaning.</p><footer><span class="av">J</span><span><b>Jennie Cook</b><small>Google Review</small></span></footer></article>
+      <article class="rcard"><span class="stars" aria-label="5 stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><p>Just a few days ago Mike came out to do the gutters and windows on my house. I don’t think my windows have ever been as clean and streak-free. Mike was a pleasure to deal with.</p><footer><span class="av">S</span><span><b>Suzanne Simmons</b><small>Google Review</small></span></footer></article>
+      <article class="rcard"><span class="stars" aria-label="5 stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><p>Mike did a great job on my windows for a really good price. He even cleaned the siding around my front door, which was really dirty. I keep my blinds open now.</p><footer><span class="av">K</span><span><b>Karen J</b><small>Google Review, Local Guide</small></span></footer></article>
+      <article class="rcard"><span class="stars" aria-label="5 stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><p>I am beyond impressed with the results. The windows are absolutely spotless! The team was incredibly professional, efficient, and thorough, great value for exceptional work.</p><footer><span class="av">C</span><span><b>Curtis Pickering</b><small>Google Review</small></span></footer></article>
+      <article class="rcard"><span class="stars" aria-label="5 stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><p>Mike is professional, friendly, and has impeccable attention to detail. Booking was easy, communication was seamless, and the work was done right the first time.</p><footer><span class="av">C</span><span><b>Charleen P</b><small>Google Review</small></span></footer></article>
+      <article class="rcard"><span class="stars" aria-label="5 stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><p>Mike did a great job and went above and beyond what he was supposed to do. He made sure I was completely happy before he left. Such a great feeling being in your home with clean windows.</p><footer><span class="av">D</span><span><b>Diane Cantrell</b><small>Google Review, Local Guide</small></span></footer></article>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="area">
+  <div class="wrap area-grid">
+    <svg class="map rv" viewBox="0 0 660 470" role="img" aria-label="Map of the service area around Edmonton">
+      <defs>
+        <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M30 0H0V30" fill="none" stroke="rgba(255,255,255,.05)"/></pattern>
+        <radialGradient id="glow"><stop offset="0" stop-color="#d9dce0" stop-opacity=".35"/><stop offset="1" stop-color="#d9dce0" stop-opacity="0"/></radialGradient>
+      </defs>
+      <rect width="660" height="470" fill="url(#grid)"/>
+      <path d="M-10 300 C 120 280, 200 330, 290 250 S 430 160, 520 190 S 640 120, 680 90" fill="none" stroke="#3a4048" stroke-width="10" stroke-linecap="round" opacity=".7"/>
+      <circle cx="330" cy="230" r="170" fill="url(#glow)"/>
+      <circle cx="330" cy="230" r="90" fill="none" stroke="rgba(255,255,255,.12)" stroke-dasharray="2 6"/>
+      <circle cx="330" cy="230" r="180" fill="none" stroke="rgba(255,255,255,.08)" stroke-dasharray="2 6"/>
+      <g stroke="#a8aeb6" stroke-width="1.6" fill="none" class="route">
+        <path d="M330 230 L270 160"/><path d="M330 230 L425 220"/><path d="M330 230 L210 238"/><path d="M330 230 L340 345"/><path d="M330 230 L430 130"/><path d="M330 230 L80 360"/>
+      </g>
+      <g fill="#d9dce0">
+        <circle cx="270" cy="160" r="6"/><circle cx="425" cy="220" r="6"/><circle cx="210" cy="238" r="6"/><circle cx="340" cy="345" r="6"/><circle cx="430" cy="130" r="6"/><circle cx="80" cy="360" r="6"/>
+      </g>
+      <text x="196" y="146">St. Albert</text><text x="440" y="214">Sherwood Park</text><text x="112" y="262">Spruce Grove</text><text x="355" y="352">Leduc</text><text x="444" y="124">Fort Saskatchewan</text><text x="48" y="390">Drayton Valley</text>
+      <circle class="pulse" cx="330" cy="230" r="22" fill="#d9dce0" opacity=".5"/>
+      <g class="hub"><circle cx="330" cy="230" r="13" fill="#fff"/><circle cx="330" cy="230" r="5" fill="#16181c"/><text x="350" y="262">Edmonton</text></g>
+      <text x="22" y="40" style="font-size:13px;fill:#8d949c">N</text><path d="M26 48v-26" stroke="#8d949c" stroke-width="1.5"/>
+    </svg>
+    <div class="rv">
+      <p class="kick">Where we work</p>
+      <h2>Edmonton and the surrounding area</h2>
+      <p class="lead" style="margin-top:20px">Based in Edmonton, serving homes and businesses throughout the metro and neighbouring communities.</p>
+      <ul class="area-list">
+        <li><a href="https://platinumwindows.ca/window-cleaning-edmonton/"><svg><use href="#i-pin"/></svg>Edmonton</a></li>
+        <li><a href="https://platinumwindows.ca/window-cleaning-st-albert/"><svg><use href="#i-pin"/></svg>St. Albert</a></li>
+        <li><a href="https://platinumwindows.ca/window-cleaning-sherwood-park/"><svg><use href="#i-pin"/></svg>Sherwood Park</a></li>
+        <li><a href="https://platinumwindows.ca/window-cleaning-spruce-grove/"><svg><use href="#i-pin"/></svg>Spruce Grove</a></li>
+        <li><a href="https://platinumwindows.ca/window-cleaning-leduc/"><svg><use href="#i-pin"/></svg>Leduc</a></li>
+        <li><a href="https://platinumwindows.ca/window-cleaning-fort-saskatchewan/"><svg><use href="#i-pin"/></svg>Fort Saskatchewan</a></li>
+        <li><a href="https://platinumwindows.ca/window-cleaning-drayton-valley/"><svg><use href="#i-pin"/></svg>Drayton Valley</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="cbox rv">
+      <div class="cinfo">
+        <p class="kick">Get in touch</p>
+        <h2>Request your quote.</h2>
+        <p style="margin-top:20px">Tell us about the property and what you’d like cleaned. We’ll follow up with a clear, itemized quote. No pressure, no surprises.</p>
+        <h4>Call or text</h4>
+        <div class="row">
+          <a class="btn btn-metal" href="tel:+17802675504"><svg><use href="#i-phone"/></svg>Call (780) 267-5504</a>
+          <a class="btn btn-ghost" href="sms:+17802675504"><svg><use href="#i-msg"/></svg>Text (780) 267-5504</a>
+        </div>
+        <h4>Email</h4>
+        <a class="mail" href="mailto:platinumwindows.ca@gmail.com"><svg><use href="#i-mail"/></svg>platinumwindows.ca@gmail.com</a>
+      </div>
+      <form class="quote" id="quote">
+        <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" autocomplete="name" required></div>
+        <div class="field"><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" required></div>
+        <div class="field full"><label for="f-svc">Service</label>
+          <select id="f-svc" name="service"><option>Window Cleaning</option><option>Pressure Washing</option><option>Soft Washing</option><option>Commercial Glass</option></select></div>
+        <div class="field full"><label for="f-det">Property details</label><textarea id="f-det" name="details"></textarea></div>
+        <button class="btn btn-ink" type="submit">Send Request <svg><use href="#i-arrow"/></svg></button>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <p class="fbig" aria-hidden="true">Platinum</p>
+    <div class="fgrid">
+      <div>
+        <div class="fbrand"><svg><use href="#logo"/></svg><b>Platinum<br>Window Cleaning</b></div>
+        <p style="margin:0;max-width:34ch">Window cleaning, pressure washing, soft washing and commercial glass in Edmonton and surrounding area.</p>
+      </div>
+      <div>
+        <h5>Services</h5>
+        <ul>
+          <li><a href="https://platinumwindows.ca/window-cleaning-edmonton/">Window Cleaning</a></li>
+          <li><a href="https://platinumwindows.ca/pressure-washing-edmonton/">Pressure Washing</a></li>
+          <li><a href="https://platinumwindows.ca/house-washing-edmonton/">Soft Washing</a></li>
+          <li><a href="https://platinumwindows.ca/commercial-window-cleaning-edmonton/">Commercial Glass</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Explore</h5>
+        <ul>
+          <li><a href="#approach">Approach</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#testimonials">Reviews</a></li>
+          <li><a href="#area">Service Area</a></li>
+          <li><a href="#contact">Get a Quote</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="tel:+17802675504">(780) 267-5504</a></li>
+          <li><a href="mailto:platinumwindows.ca@gmail.com">platinumwindows.ca@gmail.com</a></li>
+          <li>Edmonton, Alberta</li>
+        </ul>
+      </div>
+    </div>
+    <div class="fbot">
+      <span>© 2026 Platinum Window Cleaning. Edmonton, Alberta.</span>
+      <span>Design by <a href="https://cleaningdigital.ca/" target="_blank" rel="noopener">Cleaning Digital</a>.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var b=document.getElementById('burger'),m=document.getElementById('menu');
+  b.addEventListener('click',function(){var o=m.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+  m.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){m.classList.remove('open');b.setAttribute('aria-expanded',false)})});
+
+  var tabs=[].slice.call(document.querySelectorAll('.tab'));
+  function sel(t){tabs.forEach(function(x){var on=x===t;x.setAttribute('aria-selected',on);x.tabIndex=on?0:-1;document.getElementById(x.getAttribute('aria-controls')).hidden=!on});t.focus()}
+  tabs.forEach(function(t,i){t.addEventListener('click',function(){sel(t)});t.addEventListener('keydown',function(e){if(e.key==='ArrowRight')sel(tabs[(i+1)%tabs.length]);if(e.key==='ArrowLeft')sel(tabs[(i+tabs.length-1)%tabs.length])})});
+
+  var tr=document.getElementById('track');tr.innerHTML+=tr.innerHTML;
+  [].slice.call(tr.children).slice(6).forEach(function(c){c.setAttribute('aria-hidden','true')});
+
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+  document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+
+  document.getElementById('quote').addEventListener('submit',function(e){
+    e.preventDefault();var f=e.target;
+    var body='Name: '+f.name.value+'%0D%0APhone: '+f.phone.value+'%0D%0AService: '+f.service.value+'%0D%0AProperty details: '+encodeURIComponent(f.details.value);
+    window.location.href='mailto:platinumwindows.ca@gmail.com?subject='+encodeURIComponent('Quote request: '+f.service.value)+'&body='+body;
+  });
+})();
+</script>
+</body>
+</html>
